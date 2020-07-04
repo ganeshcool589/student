@@ -1,0 +1,32 @@
+.userDetails {
+  border: 1px solid #CCC;
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+  color: #fafbfc; }
+  .userDetails .userPic {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fafbfc; }
+  .userDetails .details {
+    width: 400px;
+    color: #fafbfc; }
+    .userDetails .details .row {
+      padding-top: 10px;
+      padding-bottom: 25px; }
+      .userDetails .details .row .userLabel {
+        width: 50%; }
+      .userDetails .details .row .userValue {
+        width: 50%; }
+
+.backLink {
+  position: absolute;
+  bottom: 100px;
+  margin-left: 80%;
+  color: #fafbfc;
+  cursor: pointer; }
+
+.flex, .userDetails, .userDetails .details .row {
+  display: flex;
+  justify-content: space-around; }

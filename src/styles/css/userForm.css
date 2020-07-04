@@ -1,0 +1,14 @@
+.userForm {
+  padding: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fafbfc !important; }
+  .userForm input {
+    width: 95%;
+    height: 25px; }
+  .userForm .mb20 {
+    margin-bottom: 20px; }
+  .userForm .mr20 {
+    margin-right: 20px; }

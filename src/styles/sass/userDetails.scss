@@ -1,0 +1,43 @@
+.userDetails{
+    @extend .flex;
+    border: 1px solid #CCC;
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: #fafbfc;
+    .userPic {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #fafbfc;
+    }
+    .details {
+        // @extend .flex;
+        width: 400px;
+        color: #fafbfc;
+        .row {
+            @extend .flex;
+            padding-top: 10px;
+            padding-bottom: 25px;
+            .userLabel {
+                width: 50%;
+            } 
+            .userValue {
+                width: 50%;
+            }
+        }
+    }
+}
+
+.backLink {
+    position: absolute;
+    bottom: 100px;
+    margin-left: 80%;
+    color: #fafbfc;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}

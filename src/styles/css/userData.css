@@ -1,0 +1,12 @@
+.userData {
+  width: 70%;
+  margin: 0 auto;
+  color: #fafbfc; }
+  .userData a {
+    color: #fafbfc; }
+  .userData .backLink {
+    position: absolute;
+    bottom: 100px;
+    margin-left: 66%;
+    color: #fafbfc;
+    cursor: pointer; }

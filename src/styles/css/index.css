@@ -1,0 +1,117 @@
+.App {
+  text-align: center; }
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; } }
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; }
+
+.App-link {
+  color: #61dafb; }
+
+.studentPanel {
+  padding: 15px;
+  background-color: #2b3137;
+  height: calc(100vh); }
+  .studentPanel .block {
+    margin-left: 46%;
+    color: #fafbfc; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.userDetails {
+  border: 1px solid #CCC;
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+  color: #fafbfc; }
+  .userDetails .userPic {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fafbfc; }
+  .userDetails .details {
+    width: 400px;
+    color: #fafbfc; }
+    .userDetails .details .row {
+      padding-top: 10px;
+      padding-bottom: 25px; }
+      .userDetails .details .row .userLabel {
+        width: 50%; }
+      .userDetails .details .row .userValue {
+        width: 50%; }
+
+.backLink {
+  position: absolute;
+  bottom: 100px;
+  margin-left: 80%;
+  color: #fafbfc;
+  cursor: pointer; }
+
+.flex, .userDetails, .userDetails .details .row {
+  display: flex;
+  justify-content: space-around; }
+
+.userData {
+  width: 70%;
+  margin: 0 auto;
+  color: #fafbfc; }
+  .userData a {
+    color: #fafbfc; }
+  .userData .backLink {
+    position: absolute;
+    bottom: 100px;
+    margin-left: 66%;
+    color: #fafbfc;
+    cursor: pointer; }
+
+.userForm {
+  padding: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fafbfc !important; }
+  .userForm input {
+    width: 95%;
+    height: 25px; }
+  .userForm .mb20 {
+    margin-bottom: 20px; }
+  .userForm .mr20 {
+    margin-right: 20px; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px; }

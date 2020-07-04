@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import store from "./store";
+import ShowUserData from "./showUserData";
+import ShowUserDetailData from "./showUserDetailData";
+import UserForm from "./UserForm";
+import { clearAsyncError } from "redux-form";
+
+export interface IUser {
+  firstName: string;
+  lastName: string;
+}
+
+const styles = {
+  fontFamily: "sans-serif",
+  // textAlign: "left"
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  const [userData, setUserData] = useState({});
+  const [page, setPage] = useState('form');
+
+  const showResults = (values: any) => {
+    setUserData(values);
+    setPage('userInfo');
+  }
+
+  const showUserDetails = () => {
+    setPage('userDetails');
+  }
+
+  return(
+  <Provider store={store}>
+    <div className="studentPanel">
+        {page === 'form' &&
+          <div>
+            <h3 className="block">Student Form</h3>
+            <UserForm onSubmit={showResults} />
+          </div>
+        }
+        {page === 'userInfo' &&
+          <div>
+            <h3 className="block">Student Details</h3>
+            <ShowUserData userData={userData} showUserDetails={showUserDetails} showForm={() => setPage('form')} />
+          </div>
+        }
+        {page === 'userDetails' &&
+          <div>
+            <h3 className="block">Student Detailed Info</h3>
+          <ShowUserDetailData showResults={showResults}/>
+          </div>
+        }
     </div>
-  );
+    </Provider>
+  )
 }
 
 export default App;
