@@ -50,4 +50,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 4) Menu links are missing so users will be confused while navigation, provided back link to navigate
 5) We can Provide validation to the Student form to improve the UX experience
 6) We can improve Student data table by implementing sorting and filtering options
+7) Followed tslint rules to develop the code
+8) We can use Utility classes, Constants and Custom data types to improve the code quality
 
