@@ -43,3 +43,11 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 # student
+
+1) Developed using React Hooks
+2) Generated data dynamically and mocked
+3) Used Typescript ans SASS
+4) Menu link are missing so users will be confused while navigation, provided back link to navigate
+5) We can Provide validation ti improve the UX experience
+6) We can improve Student data table by implementing sorting and filtering options
+
