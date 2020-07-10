@@ -3,7 +3,8 @@
   margin: 0 auto;
   color: #fafbfc; }
   .userData a {
-    color: #fafbfc; }
+    color: #fafbfc;
+    cursor: pointer; }
   .userData .backLink {
     position: absolute;
     bottom: 100px;

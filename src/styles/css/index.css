@@ -60,7 +60,7 @@
 
 .backLink {
   position: absolute;
-  bottom: 100px;
+  bottom: 75px;
   margin-left: 80%;
   color: #fafbfc;
   cursor: pointer; }
@@ -74,7 +74,8 @@
   margin: 0 auto;
   color: #fafbfc; }
   .userData a {
-    color: #fafbfc; }
+    color: #fafbfc;
+    cursor: pointer; }
   .userData .backLink {
     position: absolute;
     bottom: 100px;

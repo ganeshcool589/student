@@ -13,7 +13,7 @@ const UserForm = (props: any) => {
             component="input"
             type="text"
             placeholder="First Name"
-            class="input mb20"
+            className="input mb20"
           />
         </div>
       </div>
@@ -25,7 +25,7 @@ const UserForm = (props: any) => {
             component="input"
             type="text"
             placeholder="Last Name"
-            class="input mb20"
+            className="input mb20"
           />
         </div>
       </div>
@@ -37,7 +37,7 @@ const UserForm = (props: any) => {
             component="input"
             type="email"
             placeholder="Email"
-            class="input mb20"
+            className="input mb20"
           />
         </div>
       </div>
@@ -50,7 +50,7 @@ const UserForm = (props: any) => {
             component="input"
             type="text"
             placeholder="Street"
-            class="input mb20"
+            className="input mb20"
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ const UserForm = (props: any) => {
             component="input"
             type="text"
             placeholder="city"
-            class="input mb20"
+            className="input mb20"
           />
         </div>
       </div>
@@ -74,7 +74,7 @@ const UserForm = (props: any) => {
             component="input"
             type="text"
             placeholder="Phone number"
-            class="input mb20"
+            className="input mb20"
           />
         </div>
       </div>
@@ -86,7 +86,7 @@ const UserForm = (props: any) => {
             component="input"
             type="text"
             placeholder="gpa"
-            class="input mb20"
+            className="input mb20"
           />
         </div>
       </div>

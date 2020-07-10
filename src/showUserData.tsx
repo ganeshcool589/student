@@ -2,7 +2,12 @@ import React, { useMemo, useState } from 'react';
 import makeData from './makeData';
 
 const ShowUserData = (props: any) => {
-    const [sampleData, setSampleData] = useState(useMemo(() => makeData(12), []));
+
+    const userData: any[] = props.userData ? [props.userData] : [];
+    
+    const mergeData = userData.concat(makeData(12));
+    // userData.push(makeData(12));
+    const [sampleData, setSampleData] = useState(useMemo(() => mergeData, []));
 
     const removeRow = (phone: number) => {
         const filterArray = sampleData.filter(( obj: any ) => {
@@ -16,6 +21,11 @@ const ShowUserData = (props: any) => {
             <button onClick={() => removeRow(phone)}> x </button>
         )
     };
+
+    const showUserDetails = (user: any) => {
+        console.log(user);
+        props.showUserDetails(user);
+    }
     
     return (
         <table className="userData">
@@ -33,8 +43,8 @@ const ShowUserData = (props: any) => {
             <tbody>
                 {sampleData.map((user: any, index: number) => (
                     <tr key={index}>
-                        <td><a href="javascript:void('0')" onClick={() => props.showUserDetails()}>{user.firstName}</a></td>
-                        <td><a href="javascript:void('0')" onClick={() => props.showUserDetails()}>{user.lastName}</a></td>
+                        <td><a onClick={() => showUserDetails(user)}>{user.firstName}</a></td>
+                        <td><a onClick={() => showUserDetails(user)}>{user.lastName}</a></td>
                         <td>{user.street}</td>
                         <td>{user.city}</td>
                         <td>{user.phone}</td>
